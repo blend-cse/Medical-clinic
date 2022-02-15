@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css"/>
+    <link rel="stylesheet" href="../vendors/font-awsome/css/all.css" />
+    </head>
+    <body>
+        <header>
+            <div class="head">
+            <p id="address"><i class="fas fa-map-marker-alt"></i> 500 Terry Francois Street San Francisco, CA 94158</p>
+            <p  id="number"> <i class="fas fa-phone-alt"></i> Tel:012 345 678</p>
+        </div>
+        <div  class ="header">
+            <img class="header-img"src ="../photos/logo.png" alt=""/> 
+            <ul class ="header-ul">
+                <li><a href="Medical Clinic.html"><i class="fas fa-home"></i> HOME</a></li>
+                <li><a href ="about-us.html"><i class="fas fa-address-card"></i> ABOUT US</a></li>
+                <li><a href ="departments.html"><i class="far fa-building"></i> DEPARTMENTS</a></li>
+                <li><a href ="contact.html"><i class="far fa-id-badge"></i> CONTACT</a></li>
+                <li><a   onclick="document.getElementById('id01').style.display='block'" href="#" class="login-button"><i class="fas fa-sign-in-alt"></i> Login</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+    <div class="page-title">
+        <h2 class="h1-aboutus">Contact Us</h2>
+    </div>
+    </header>
+    
+    <div class="contact-page">
+        <div class="contact-us">
+            <div class="contact-us-col contact-address">
+                <h3> Our Location</h3>
+                <br>
+               <p>  500 Terry Francois Street</p>
+               <p> San Francisco, CA 94158</p>
+               <br>
+               <p> Tel: 123-456-7890</p>
+               <p> Fax: 123-456-7890</p>
+               <br>
+               <p> <i class="far fa-envelope"></i> info@mysite.com</p>
+           </div>
+           <div class="contact-us-col">
+               <div class="container">
+                   <form action="/action_page.php">
+                     <label for="fname">First Name</label>
+                     <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                 
+                     <label for="lname">Last Name</label>
+                     <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                 
+                     <label for="country" style="margin-bottom:5px">Departments</label>
+                     <select id="country" name="country" style="width: 100%; padding: 5px 20px; margin-bottom: 10px;">
+                       <option value="australia">Cardiology</option>
+                       <option value="canada">Neurology</option>
+                       <option value="usa">Orthopedics</option>
+                     </select>
+                     <label for="subject"  style="margin-bottom:5px">Subject</label><br>
+                     <textarea id="subject" name="subject" placeholder="Write something.." style="height:150px; width: 100%;"></textarea>
+                 
+                     <input class="submit-button"type="submit" value="Submit">
+                   </form>
+                 </div>
+           </div>
+       </div>
+    </div>
+    <br>
+    <footer>
+        <div class="footer">
+          <p>@UBT 2020.</p>
+  
+        </div>
+      </footer>
+    </body>
+</html>
