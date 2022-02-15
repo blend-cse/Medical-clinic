@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../vendors/font-awsome/css/all.css" />
+</head>
+
+<body>
+  <header>
+    <div class="head">
+      <p id="address"><i class="fas fa-map-marker-alt"></i> &nbsp; 500 Terry Francois Street San Francisco, CA 94158</p>
+      <p id="number"> <i class="fas fa-phone-alt "></i>&nbsp; Tel:012 345 678</p>
+    </div>
+    <div class="header">
+      <img class="header-img" src="../photos/logo.png" alt="" />
+      <ul class="header-ul">
+        <li><a href="../html/Medical Clinic.html"><i class="fas fa-home"></i> HOME</a></li>
+        <li><a href="../html/about-us.html"><i class="fas fa-address-card"></i> ABOUT US</a></li>
+        <li><a href="../html/departments.html"><i class="fas fa-building"></i> DEPARTMENTS</a></li>
+        <li><a href="contact.html"><i class="fas fa-id-badge"></i> CONTACT</a></li>
+        <li><a onclick="document.getElementById('id01').style.display='block'" href="#" class="login-button"><i
+              class="fas fa-sign-in-alt"></i> Login</a></li>
+      </ul>
+
+
+
+      <div id="id01" class="modal">
+
+        <form class="modal-content animate" action="" method="post" id="mainForm">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close"
+              title="Close Modal">&times;</span>
+            <img src="../photos/logo.png" alt="Avatar" class="avatar">
+          </div>
+          <div class="link-container">
+            <button  type="button"  id="firstA" href="#" onclick="changeForm(0)">Login</button>
+            <button type="button" href="#" onclick="changeForm(1)">Register</button>
+          </div>
+          <div class="container forms form-style">
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+            <button type="submit" id="login">Login</button>
+            <div class="container" style="background-color:#f1f1f1">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn">Cancel</button>
+              <span class="psw"><a href="#">Forgot password?</a></span>
+
+            </div>
+          </div>
+          <div class="register forms hidden">
+
+            <label><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+            <label><b>Email</b></label>
+            <input type="email" placeholder="Enter Email Address" name="email" required>
+            <label><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+            <label>
+
+              <button id="submit" type="button" name='asdf' class="input submit" value=""
+                onclick="validate('register')" >Register</button>
+          </div>
+
+
+        </form>
+      </div>
+      <script src="../javascript/login.js"></script>
+
+  </div>
+    <div id="Maincontent">
+      <img src="../photos/hero-img-1.jpg" alt="" >
+      <div class="boxes">
+          <h4>Neurology</h4>
+          <p> Department of Neurology has a team
+            of highly trained specialists with vast experience.</p>
+            <a href="../html/Neurology.html">Learn More</a>
+        </div>
+        <div class="boxes">
+            <h4>Cardiology</h4>
+            <p>Medical Clinic isone of the 
+              the best Cardiology Hospitals in Hyderabad.</p>
+              <a href="../html/Cardiology.html">Learn More</a>
+          </div>
+          <div class="boxes">
+            <h4>Orthopedics</h4>
+            <p>Health is our greatest treasure and
+              with incredible specialists.</p>
+              <a href="../html/Orthopedics.html">Learn More</a>
+          </div>
+
+
+    </div>
+    <div class="Appointment">
+      <p> Schedule your appointment online</p>
+
+      <a href="../html/contact.html"  alt="About us" class="btnn btnlink">Book an Aoppointment</a>
+    </div>
+     
+    
+    <div class="Content">
+       <p>Sign up for our newsletter</p>
+      <input  id="email" placeholder="Enter your email here" type="email" name="email" required> 
+      <button  id="button" type="submit">Subscribe</button>  
+          
+    </div>
+
+
+    </div>
+
+    <footer>
+      <div class="footer">
+        <p>@UBT 2020.</p>
+
+      </div>
+    </footer>
+</body>
+
+
+</html>
